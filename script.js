@@ -1,7 +1,10 @@
 let data = new Date();
 
 
+dia = data.getDay();
+mes = data.getMonth() + 1;
+ano = data.getFullYear();
 
-mes = data.getHours();
-
+console.log(dia);
 console.log(mes);
+console.log(ano);
