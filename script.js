@@ -1,10 +1,18 @@
 let data = new Date();
 
 
-dia = data.getDay();
-mes = data.getMonth() + 1;
-ano = data.getFullYear();
+diaAtual = data.getDay();
+mesAtual = data.getMonth() + 1;
+anoAtual = data.getFullYear();
 
-console.log(dia);
-console.log(mes);
-console.log(ano);
+
+function clicou() {
+    diaResult = document.querySelectorAll(".age-display");
+    mesResult = document.querySelectorAll(".mesInserido");
+    anoResult = document.querySelectorAll(".anoInserido");
+
+    diaResult.innerHTML = diaAtual;
+}
+
+
+
